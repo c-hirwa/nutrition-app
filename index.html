@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planning Nutritional Advisor</title>
+    <link rel="stylesheet" href="sytles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meal Planning Nutritional Advisor</h1>
+        </header>
+
+        <main>
+            <section class="meal-input-section">
+                <h2>Add Your Meal</h2>
+                <div class="meal-input-container">
+                    <select id="meal-type">
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="snacks">Snacks</option>
+                    </select>
+                    <input type="text" id="food-item" placeholder="Enter food item">
+                    <button id="add-meal-btn">Add Meal</button>
+                </div>
+            </section>
+
+            <section class="meals-summary">
+                <div class="meals-list">
+                    <h2>Today's Meals</h2>
+                    <ul id="meals-list-container"></ul>
+                </div>
+
+                <div class="nutrition-summary">
+                    <h2>Nutrition Summary</h2>
+                    <div id="nutrition-summary-container"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Meal Planning Nutritional Advisor</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
