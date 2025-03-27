@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.meal-input-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.meal-input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#meal-type, 
+#food-item, 
+#add-meal-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#meal-type {
+    flex: 1;
+}
+
+#food-item {
+    flex: 2;
+}
+
+#add-meal-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-meal-btn:hover {
+    background-color: #2980b9;
+}
+
+.meals-summary {
+    display: flex;
+    gap: 20px;
+}
+
+.meals-list, 
+.nutrition-summary {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.meals-list ul {
+    list-style-type: none;
+}
+
+.meals-list li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#nutrition-summary-container {
+    display: grid;
+    gap: 10px;
+}
+
+.nutrition-item {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .meals-summary {
+        flex-direction: column;
+    }
+}
